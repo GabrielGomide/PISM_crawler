@@ -29,6 +29,9 @@ for i, comp in enumerate(components):
     for j in range(n_years):
         plt.bar(x[i * n_years + j], values[i][j], color=colors[i], width=width, edgecolor='black')
 
+plt.title(f"Average Score per Curricular Component in PISM I {years[0]} - {years[-1]}")
+
+
 # Y Axis
 plt.ylabel("Average Score")
 
